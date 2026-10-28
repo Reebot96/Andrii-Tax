@@ -418,7 +418,6 @@ body.menu-open { overflow: hidden; }
   background: rgb(52 211 153 / 0.16); color: var(--emerald-400);
 }
 .float-card--a { left: 0; bottom: 18%; }
-.float-card--b { right: 0; top: 14%; animation-delay: -3s; }
 @keyframes bob { 50% { transform: translateY(-10px); } }
 
 .seal {
@@ -915,7 +914,6 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
   .hero__grid { grid-template-columns: 1.25fr 0.75fr; gap: 72px; }
   .hero__media { margin: 0 0 0 auto; }
   .float-card--a { left: -64px; }
-  .float-card--b { right: -40px; }
 
   .bento { grid-template-columns: repeat(3, 1fr); grid-auto-rows: minmax(220px, auto); }
   .bento__card--hero { grid-column: span 2; grid-row: span 2; padding: 48px; }

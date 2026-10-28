@@ -65,8 +65,6 @@
       "photoAlt": "Andriy Drebot, tax preparer in Chicago",
       "cardATitle": "IRS e-file",
       "cardAText": "Official electronic filing",
-      "cardBTitle": "Online",
-      "cardBText": "E-signature",
       "seal": "Chicago · Illinois · Online · "
     },
     "marquee": ["Form 1040", "LLC", "S-Corp", "C-Corp", "Amended 1040-X", "Self-employed 1099", "Illinois IL-1040", "E-file"],
