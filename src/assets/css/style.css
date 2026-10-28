@@ -230,7 +230,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   font: 700 0.95rem/1 var(--font-body); letter-spacing: 0.02em;
   box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.25);
 }
-.logo__text { display: flex; flex-direction: column; line-height: 1.15; }
+.logo__text { display: flex; flex-direction: column; gap: 5px; line-height: 1.1; }
 .logo__name { font-weight: 600; font-size: 1rem; letter-spacing: -0.01em; }
 .logo__tag { font-size: 0.6875rem; opacity: 0.6; text-transform: uppercase; letter-spacing: 0.14em; }
 
@@ -285,10 +285,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: var(--white); text-decoration: none;
   transform: translateY(110%);
   transition: transform 0.6s var(--ease), color 0.2s;
-}
-.nav__list a::before {
-  content: attr(data-num); font-size: 0.8125rem; font-weight: 500; letter-spacing: 0.05em;
-  color: var(--emerald-400);
 }
 .nav.is-open .nav__list a { transform: none; }
 .nav.is-open .nav__list li:nth-child(2) a { transition-delay: 0.05s; }
@@ -901,7 +897,6 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
     font-size: 0.9375rem; font-weight: 500; letter-spacing: -0.005em; color: inherit; opacity: 0.8;
     transition: opacity 0.2s;
   }
-  .nav__list a::before { content: none; }
   .nav__list a::after {
     content: ""; position: absolute; left: 14px; right: 14px; bottom: 2px; height: 1.5px;
     background: var(--emerald-400); transform: scaleX(0); transform-origin: right;
