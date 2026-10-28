@@ -106,6 +106,7 @@ function build() {
   fs.rmSync(DIST, { recursive: true, force: true });
   copyDir(path.join(SRC, 'assets'), path.join(DIST, 'assets'));
   fs.copyFileSync(path.join(ROOT, 'config', 'tax-rates.js'), path.join(DIST, 'assets', 'js', 'tax-rates.js'));
+  minifyCss(path.join(DIST, 'assets', 'css', 'style.css'));
 
   // One output file per (template, language).
   function emit({ tplFile, slug, navId, lang, meta, extra = {}, outFile }) {
@@ -205,6 +206,18 @@ function build() {
   );
 
   console.log(`Built ${pages.length} page(s) + ${articles.length} article(s) x ${langs.length} languages -> dist/`);
+}
+
+// Strip comments and extra whitespace. Data URIs and strings in our CSS have
+// no "/*" or runs of spaces, so a plain regex pass is safe here.
+function minifyCss(file) {
+  const css = readText(file)
+    .replace(/\/\*[\s\S]*?\*\//g, '')
+    .replace(/\s+/g, ' ')
+    .replace(/\s*([{};,>])\s*/g, '$1')
+    .replace(/;}/g, '}')
+    .trim();
+  fs.writeFileSync(file, css);
 }
 
 function businessSchema(site, t, pathname) {

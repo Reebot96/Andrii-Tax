@@ -133,6 +133,17 @@
     items.forEach(function (el) { observer.observe(el); });
   }
 
+  // ------------------------------------------- pause off-screen loops
+  // Aurora, marquee and the seal keep animating forever; stop them while unseen.
+  if ('IntersectionObserver' in window && !reduceMotion) {
+    var loops = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        entry.target.classList.toggle('is-offscreen', !entry.isIntersecting);
+      });
+    });
+    document.querySelectorAll('.dark, .marquee').forEach(function (el) { loops.observe(el); });
+  }
+
   // ------------------------------------------------------ booking form
   // Sends to Formspree in the background and shows the result in place.
   document.querySelectorAll('[data-form]').forEach(function (form) {
@@ -188,10 +199,15 @@
   // Gentle parallax on the hero portrait.
   var media = document.querySelector('[data-parallax]');
   if (media) {
+    var pointer = null;
     window.addEventListener('pointermove', function (e) {
-      var x = (e.clientX / window.innerWidth - 0.5) * 14;
-      var y = (e.clientY / window.innerHeight - 0.5) * 14;
-      media.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0)';
+      if (!pointer) requestAnimationFrame(function () {
+        var x = (pointer.clientX / window.innerWidth - 0.5) * 14;
+        var y = (pointer.clientY / window.innerHeight - 0.5) * 14;
+        media.style.transform = 'translate3d(' + x + 'px,' + y + 'px,0)';
+        pointer = null;
+      });
+      pointer = e;
     }, { passive: true });
   }
 })();
