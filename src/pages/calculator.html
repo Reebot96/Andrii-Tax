@@ -7,8 +7,7 @@
 {{> header}}
 
 <main id="main">
-  <!-- Placeholder until the calculator is built -->
-  <section class="page-hero dark" style="min-height:100svh;display:flex;align-items:center">
+  <section class="page-hero dark">
     {{> aurora}}
     <div class="container">
       <nav class="breadcrumbs fade-up" style="--d:.05s" aria-label="Breadcrumb">
@@ -16,13 +15,115 @@
       </nav>
       <h1 class="page-hero__title" data-split>{{t.calculator.title}}</h1>
       <p class="page-hero__lead fade-up" style="--d:.5s">{{t.calculator.lead}}</p>
-      <div class="hero__actions fade-up" style="--d:.65s;margin-top:32px">
-        <a class="btn btn--primary btn--lg" href="{{url.contact}}" data-magnetic>{{t.common.bookLong}} <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a class="btn btn--glass btn--lg" href="{{url.services}}">{{t.common.services}}</a>
+    </div>
+  </section>
+
+  <section class="section section--soft calc-section">
+    <div class="container">
+      <div class="calc-disclaimer reveal" role="note">
+        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/></svg>
+        <div>
+          <strong>{{t.calculator.disclaimerTitle}}</strong>
+          <p>{{t.calculator.disclaimer}}</p>
+        </div>
+      </div>
+
+      <div class="calc">
+        <form class="calc__form form-card reveal" data-calc novalidate>
+          <p class="calc__year">{{t.calculator.yearLabel}} <span data-year></span></p>
+
+          <fieldset class="field">
+            <legend>{{t.calculator.status}}</legend>
+            <div class="calc-status">
+              <label><input type="radio" name="status" value="single" checked><span><strong>{{t.calculator.statusSingle}}</strong><small>{{t.calculator.statusSingleHint}}</small></span></label>
+              <label><input type="radio" name="status" value="joint"><span><strong>{{t.calculator.statusJoint}}</strong><small>{{t.calculator.statusJointHint}}</small></span></label>
+              <label><input type="radio" name="status" value="head"><span><strong>{{t.calculator.statusHead}}</strong><small>{{t.calculator.statusHeadHint}}</small></span></label>
+            </div>
+            <p class="calc__warn" data-out="headWarn" hidden>{{t.calculator.headWarn}}</p>
+          </fieldset>
+
+          <div class="field">
+            <label for="c-income">{{t.calculator.income}}</label>
+            <div class="money-input">
+              <span aria-hidden="true">$</span>
+              <input id="c-income" name="income" type="text" inputmode="numeric" autocomplete="off" value="55,000" data-money aria-describedby="c-income-hint">
+            </div>
+            <small class="field__hint" id="c-income-hint">{{t.calculator.incomeHint}}</small>
+          </div>
+
+          <div class="field">
+            <label for="c-kids">{{t.calculator.kids}}</label>
+            <div class="stepper">
+              <button type="button" data-step="-1" aria-label="{{t.calculator.less}}">−</button>
+              <input id="c-kids" name="kids" type="number" min="0" max="10" value="1" inputmode="numeric">
+              <button type="button" data-step="1" aria-label="{{t.calculator.more}}">+</button>
+            </div>
+          </div>
+
+          <fieldset class="field calc__withheld">
+            <legend>{{t.calculator.withheldTitle}}</legend>
+            <small class="field__hint">{{t.calculator.withheldHint}}</small>
+            <div class="form__row">
+              <div class="field">
+                <label for="c-fed">{{t.calculator.fedWithheld}}</label>
+                <div class="money-input"><span aria-hidden="true">$</span><input id="c-fed" name="fedWithheld" type="text" inputmode="numeric" autocomplete="off" placeholder="0" data-money></div>
+              </div>
+              <div class="field">
+                <label for="c-il">{{t.calculator.ilWithheld}}</label>
+                <div class="money-input"><span aria-hidden="true">$</span><input id="c-il" name="ilWithheld" type="text" inputmode="numeric" autocomplete="off" placeholder="0" data-money></div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+        <div class="calc__result reveal">
+          <div class="result-card dark" data-out="card" aria-live="polite">
+            {{> aurora}}
+            <p class="result-card__label" data-out="label"></p>
+            <p class="result-card__value" data-out="headline">$0</p>
+            <p class="result-card__hint" data-out="hint">{{t.calculator.resultHint}}</p>
+
+            <div class="result-card__split">
+              <div>
+                <h3 class="result-card__group">{{t.calculator.federal}}</h3>
+                <dl>
+                <div><dt>{{t.calculator.rowIncome}}</dt><dd data-out="fedIncome"></dd></div>
+                <div><dt>{{t.calculator.rowDeduction}}</dt><dd data-out="fedDeduction"></dd></div>
+                <div><dt>{{t.calculator.rowTaxable}}</dt><dd data-out="fedTaxable"></dd></div>
+                <div><dt>{{t.calculator.rowTax}}</dt><dd data-out="fedTax"></dd></div>
+                <div><dt>{{t.calculator.rowChild}}</dt><dd data-out="fedChild"></dd></div>
+                <div><dt>{{t.calculator.rowEitc}}</dt><dd data-out="fedEitc"></dd></div>
+                <div class="is-total"><dt>{{t.calculator.rowNet}}</dt><dd data-out="fedNet"></dd></div>
+                </dl>
+              </div>
+              <div>
+                <h3 class="result-card__group">{{t.calculator.illinois}}</h3>
+                <dl>
+                <div><dt>{{t.calculator.rowExemptions}}</dt><dd data-out="ilExemptions"></dd></div>
+                <div><dt>{{t.calculator.rowTaxable}}</dt><dd data-out="ilTaxable"></dd></div>
+                <div><dt>{{t.calculator.rowIlTax}}</dt><dd data-out="ilTax"></dd></div>
+                <div><dt>{{t.calculator.rowIlEitc}}</dt><dd data-out="ilEitc"></dd></div>
+                <div class="is-total"><dt>{{t.calculator.rowNet}}</dt><dd data-out="ilNet"></dd></div>
+                </dl>
+              </div>
+            </div>
+
+            <a class="btn btn--primary btn--lg result-card__cta" href="{{url.contact}}" data-magnetic>
+              {{t.calculator.cta}}
+              <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <small class="result-card__note">{{t.calculator.ctaNote}}</small>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </main>
+
+<script type="application/json" id="calc-i18n">{{calcJSON}}</script>
+<script src="/assets/js/tax-rates.js?v={{v}}" defer></script>
+<script src="/assets/js/calculator.js?v={{v}}" defer></script>
+<script src="/assets/js/calculator-ui.js?v={{v}}" defer></script>
 
 {{> footer}}
 </body>

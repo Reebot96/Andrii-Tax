@@ -9,8 +9,8 @@
       "description": "Preparation of 1040, LLC, S and C corporation returns, and amended returns for past years (1040-X). Chicago and online across Illinois."
     },
     "calculator": {
-      "title": "Tax Refund Calculator | Andriy Drebot",
-      "description": "A rough estimate of your federal refund and Illinois tax. Coming soon."
+      "title": "Tax Refund Calculator 2026 — Illinois | Andriy Drebot",
+      "description": "A rough estimate of your 2026 federal refund and Illinois tax: income, filing status and children."
     },
     "about": {
       "title": "About — Tax Preparer in Chicago | Andriy Drebot",
@@ -67,7 +67,16 @@
       "cardAText": "Official electronic filing",
       "seal": "Chicago · Illinois · Online · "
     },
-    "marquee": ["Form 1040", "LLC", "S-Corp", "C-Corp", "Amended 1040-X", "Self-employed 1099", "Illinois IL-1040", "E-file"],
+    "marquee": [
+      "Form 1040",
+      "LLC",
+      "S-Corp",
+      "C-Corp",
+      "Amended 1040-X",
+      "Self-employed 1099",
+      "Illinois IL-1040",
+      "E-file"
+    ],
     "why": {
       "kicker": "Why me",
       "title": "Trust is the <em>foundation</em> of tax work",
@@ -191,8 +200,49 @@
   },
   "calculator": {
     "kicker": "Calculator",
-    "title": "Refund <em>calculator</em> — coming soon",
-    "lead": "This page will soon give you a rough estimate of your federal refund and Illinois tax. Until then, book a consultation and I'll calculate it precisely for your situation."
+    "title": "How much could you <em>get back</em>?",
+    "lead": "A rough estimate of your federal and Illinois tax in a minute. Enter your income, filing status and number of children.",
+    "yearLabel": "Tax year",
+    "disclaimerTitle": "This is a rough estimate",
+    "disclaimer": "Not tax advice and not a tax return. It only accounts for wages (W-2), the standard deduction, the Child Tax Credit and the Earned Income Credit. Your actual amount depends on your situation — I'll calculate it precisely in a consultation.",
+    "status": "Filing status",
+    "statusSingle": "Single",
+    "statusSingleHint": "Not married",
+    "statusJoint": "Married jointly",
+    "statusJointHint": "Spouses together",
+    "statusHead": "Head of household",
+    "statusHeadHint": "Supporting kids alone",
+    "headWarn": "Head of household usually requires a child or other dependent.",
+    "income": "Annual income before taxes",
+    "incomeHint": "Wages for the year (W-2). For couples — combined.",
+    "kids": "Children under 17",
+    "less": "Fewer",
+    "more": "More",
+    "withheldTitle": "Tax already withheld from pay",
+    "withheldHint": "Optional. Add it to see your refund.",
+    "fedWithheld": "Federal (W-2, box 2)",
+    "ilWithheld": "Illinois (W-2, box 17)",
+    "resultHint": "Add the tax withheld to see your refund.",
+    "federal": "Federal",
+    "illinois": "Illinois",
+    "rowIncome": "Income",
+    "rowDeduction": "Standard deduction",
+    "rowTaxable": "Taxable income",
+    "rowTax": "Tax",
+    "rowChild": "Child Tax Credit",
+    "rowEitc": "Earned Income Credit",
+    "rowNet": "After credits",
+    "rowExemptions": "Personal exemptions",
+    "rowIlTax": "Tax 4.95%",
+    "rowIlEitc": "Illinois EIC",
+    "cta": "Get an exact calculation",
+    "ctaNote": "In a consultation I'll account for all your income, deductions and credits.",
+    "js": {
+      "refund": "Estimated refund",
+      "owe": "Estimated amount owed",
+      "creditsBack": "Credits that may come back",
+      "yearTax": "Your tax for the year"
+    }
   },
   "about": {
     "kicker": "About",

@@ -104,6 +104,7 @@ function build() {
 
   fs.rmSync(DIST, { recursive: true, force: true });
   copyDir(path.join(SRC, 'assets'), path.join(DIST, 'assets'));
+  fs.copyFileSync(path.join(ROOT, 'config', 'tax-rates.js'), path.join(DIST, 'assets', 'js', 'tax-rates.js'));
 
   // One output file per (template, language).
   function emit({ tplFile, slug, navId, lang, meta, extra = {}, outFile }) {
@@ -144,6 +145,8 @@ function build() {
       langSwitch,
       altJSON: JSON.stringify(alt),
       articleCards: articleCards(lang),
+      // texts the calculator script needs, safe to drop inside <script>
+      calcJSON: JSON.stringify(t[lang.code].calculator.js || {}).replace(/</g, '\\u003c'),
       jsonld: '',
       ...extra,
     };
