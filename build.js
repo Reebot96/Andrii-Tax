@@ -69,7 +69,8 @@ function build() {
   const site = readJSON(path.join(ROOT, 'config', 'site.json'));
   const langs = site.languages;
   const t = Object.fromEntries(langs.map((l) => [l.code, readJSON(path.join(SRC, 'i18n', `${l.code}.json`))]));
-  const pages = site.pages.filter((p) => fs.existsSync(path.join(SRC, 'pages', `${p.id}.html`)));
+  // "hidden": true in site.json keeps a page's template but leaves it off the site and sitemap.
+  const pages = site.pages.filter((p) => !p.hidden && fs.existsSync(path.join(SRC, 'pages', `${p.id}.html`)));
   const articles = site.articles.filter((a) => fs.existsSync(path.join(SRC, 'articles', a.id)));
   const version = Date.now().toString(36);
 

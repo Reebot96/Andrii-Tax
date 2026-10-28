@@ -24,7 +24,7 @@
     { "id": "services", "slug": "services" },
     { "id": "calculator", "slug": "calculator" },
     { "id": "about", "slug": "about" },
-    { "id": "reviews", "slug": "reviews" },
+    { "id": "reviews", "slug": "reviews", "hidden": true },
     { "id": "blog", "slug": "blog" },
     { "id": "contact", "slug": "contact" }
   ],
