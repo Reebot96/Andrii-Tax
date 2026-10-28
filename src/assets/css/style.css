@@ -767,7 +767,7 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 .segmented input:checked + span { border-color: var(--emerald-500); background: rgb(16 185 129 / 0.1); color: var(--ink); }
 .segmented input:focus-visible + span { box-shadow: 0 0 0 4px rgb(16 185 129 / 0.2); }
 .form__note { font-size: 0.8125rem; color: var(--muted); }
-.form__hp { position: absolute; left: -9999px; }
+.form__hp { display: none !important; }
 .form button[type="submit"] { width: 100%; }
 .form button[disabled] { opacity: 0.7; pointer-events: none; }
 .form-status { padding: 16px 18px; border-radius: 14px; font-size: 0.9375rem; }

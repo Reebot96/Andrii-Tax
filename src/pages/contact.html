@@ -52,7 +52,8 @@
               data-msg-sending="{{t.contact.sending}}">
           <input type="hidden" name="_subject" value="{{t.contact.subject}}">
           <input type="hidden" name="language" value="{{lang}}">
-          <input class="form__hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <!-- Spam trap: hidden with display:none so browser autofill never fills it -->
+          <div class="form__hp" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
 
           <div class="field">
             <label for="f-name">{{t.contact.name}}</label>
