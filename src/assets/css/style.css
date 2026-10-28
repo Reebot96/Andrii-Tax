@@ -823,7 +823,7 @@ fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
 .stepper button:hover { border-color: var(--emerald-500); background: rgb(16 185 129 / 0.08); }
 .field .stepper input { text-align: center; font-size: 1.125rem; font-weight: 600; -moz-appearance: textfield; }
 .stepper input::-webkit-outer-spin-button, .stepper input::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
-.calc__withheld { padding-top: 20px; border-top: 1px solid var(--line) !important; }
+.calc__withheld { padding-top: 4px; }
 .calc__withheld .form__row { margin-top: 14px; }
 
 .result-card {

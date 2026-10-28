@@ -45,5 +45,12 @@ window.TAX_RATES = {
     exemption: 2925,             // per person: you, spouse (joint) and each dependent
     exemptionIncomeLimit: { single: 250000, joint: 500000, head: 250000 }, // no exemptions above this
     eitcShareOfFederal: 0.20,    // Illinois EITC = 20% of the federal EITC (refundable)
+
+    // Illinois Child Tax Credit: 40% of the Illinois EITC when at least one
+    // dependent is under 12 at the end of the year (35 ILCS 5/244, tax years from 2025).
+    // Note: the IDOR page still says the credit "was created for tax years 2024 and 2025",
+    // while the statute has no end date — check IDOR's "What's New" each year
+    // and set shareOfIlEitc to 0 if the credit is not available.
+    childTaxCredit: { shareOfIlEitc: 0.40, maxChildAge: 11 },
   },
 };

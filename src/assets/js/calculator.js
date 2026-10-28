@@ -28,7 +28,7 @@
     return Math.max(0, Math.min(phaseIn, row.maxCredit - (income - start) * phaseoutRate));
   }
 
-  // input: { status: 'single'|'joint'|'head', income, kids, fedWithheld, ilWithheld }
+  // input: { status: 'single'|'joint'|'head', income, kids, kidsUnder12, fedWithheld, ilWithheld }
   // Withheld amounts are null when the visitor left them empty.
   function estimate(input, rates) {
     var fed = rates.federal;
@@ -64,7 +64,9 @@
     var ilTaxable = Math.max(0, income - exemptions);
     var ilTax = ilTaxable * il.rate;
     var ilEitc = eitc * il.eitcShareOfFederal;
-    var ilNet = ilTax - ilEitc;
+    var kidsUnder12 = Math.min(kids, Math.max(0, Math.floor(input.kidsUnder12 || 0)));
+    var ilChildCredit = kidsUnder12 > 0 ? ilEitc * il.childTaxCredit.shareOfIlEitc : 0;
+    var ilNet = ilTax - ilEitc - ilChildCredit;
 
     var hasWithheld = input.fedWithheld != null || input.ilWithheld != null;
     var fedResult = (input.fedWithheld || 0) - fedNet; // > 0 refund, < 0 owed
@@ -78,7 +80,7 @@
         net: fedNet, withheld: input.fedWithheld, result: fedResult,
       },
       illinois: {
-        exemptions: exemptions, taxable: ilTaxable, tax: ilTax, eitc: ilEitc,
+        exemptions: exemptions, taxable: ilTaxable, tax: ilTax, eitc: ilEitc, childCredit: ilChildCredit,
         net: ilNet, withheld: input.ilWithheld, result: ilResult,
       },
       hasWithheld: hasWithheld,

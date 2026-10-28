@@ -25,12 +25,14 @@
     });
   });
 
-  // Children stepper
+  // Children steppers; "under 12" can never exceed the total.
   var kidsInput = form.querySelector('[name="kids"]');
+  var under12Input = form.querySelector('[name="kidsUnder12"]');
   form.querySelectorAll('[data-step]').forEach(function (btn) {
     btn.addEventListener('click', function () {
-      var next = Math.max(0, Math.min(10, Number(kidsInput.value || 0) + Number(btn.dataset.step)));
-      kidsInput.value = next;
+      var input = btn.parentElement.querySelector('input');
+      input.value = Math.max(0, Math.min(10, Number(input.value || 0) + Number(btn.dataset.step)));
+      if (input === under12Input && Number(under12Input.value) > Number(kidsInput.value)) kidsInput.value = under12Input.value;
       update();
     });
   });
@@ -60,10 +62,12 @@
 
   function update() {
     var status = form.querySelector('[name="status"]:checked').value;
+    if (Number(under12Input.value || 0) > Number(kidsInput.value || 0)) under12Input.value = kidsInput.value;
     var r = window.TaxCalculator.estimate({
       status: status,
       income: readMoney(form.querySelector('[name="income"]')) || 0,
       kids: Number(kidsInput.value || 0),
+      kidsUnder12: Number(under12Input.value || 0),
       fedWithheld: readMoney(form.querySelector('[name="fedWithheld"]')),
       ilWithheld: readMoney(form.querySelector('[name="ilWithheld"]')),
     }, window.TAX_RATES);
@@ -94,6 +98,7 @@
     out('ilTaxable').textContent = money.format(r.illinois.taxable);
     out('ilTax').textContent = money.format(r.illinois.tax);
     out('ilEitc').textContent = minus(r.illinois.eitc);
+    out('ilChild').textContent = minus(r.illinois.childCredit);
     out('ilNet').textContent = signed(r.illinois.net);
 
     var headWarn = status === 'head' && Number(kidsInput.value || 0) === 0;

@@ -60,6 +60,16 @@
             </div>
           </div>
 
+          <div class="field">
+            <label for="c-kids12">{{t.calculator.kidsUnder12}}</label>
+            <div class="stepper">
+              <button type="button" data-step="-1" aria-label="{{t.calculator.less}}">−</button>
+              <input id="c-kids12" name="kidsUnder12" type="number" min="0" max="10" value="1" inputmode="numeric" aria-describedby="c-kids12-hint">
+              <button type="button" data-step="1" aria-label="{{t.calculator.more}}">+</button>
+            </div>
+            <small class="field__hint" id="c-kids12-hint">{{t.calculator.kidsUnder12Hint}}</small>
+          </div>
+
           <fieldset class="field calc__withheld">
             <legend>{{t.calculator.withheldTitle}}</legend>
             <small class="field__hint">{{t.calculator.withheldHint}}</small>
@@ -103,6 +113,7 @@
                 <div><dt>{{t.calculator.rowTaxable}}</dt><dd data-out="ilTaxable"></dd></div>
                 <div><dt>{{t.calculator.rowIlTax}}</dt><dd data-out="ilTax"></dd></div>
                 <div><dt>{{t.calculator.rowIlEitc}}</dt><dd data-out="ilEitc"></dd></div>
+                  <div><dt>{{t.calculator.rowIlChild}}</dt><dd data-out="ilChild"></dd></div>
                 <div class="is-total"><dt>{{t.calculator.rowNet}}</dt><dd data-out="ilNet"></dd></div>
                 </dl>
               </div>
