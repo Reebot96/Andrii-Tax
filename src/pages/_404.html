@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  {{> head}}
+  <meta name="robots" content="noindex">
+</head>
+<body>
+{{> header}}
+
+<main id="main">
+  <section class="not-found dark">
+    {{> aurora}}
+    <div class="container">
+      <p class="not-found__code gradient-text">404</p>
+      <h1>{{t.notFound.title}}</h1>
+      <p>{{t.notFound.text}}</p>
+      <p lang="uk">{{tAll.uk.notFound.title}}. {{tAll.uk.notFound.text}}</p>
+      <div class="not-found__actions">
+        <a class="btn btn--primary btn--lg" href="/">{{t.notFound.home}}</a>
+        <a class="btn btn--glass btn--lg" href="/uk/">{{tAll.uk.notFound.home}}</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{> footer}}
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  {{> head}}
+</head>
+<body>
+{{> header}}
+
+<main id="main">
+  <!-- Placeholder until the calculator is built -->
+  <section class="page-hero dark" style="min-height:100svh;display:flex;align-items:center">
+    {{> aurora}}
+    <div class="container">
+      <nav class="breadcrumbs fade-up" style="--d:.05s" aria-label="Breadcrumb">
+        <a href="{{url.home}}">{{t.nav.home}}</a><span aria-hidden="true">/</span><span>{{t.nav.calculator}}</span>
+      </nav>
+      <h1 class="page-hero__title" data-split>{{t.calculator.title}}</h1>
+      <p class="page-hero__lead fade-up" style="--d:.5s">{{t.calculator.lead}}</p>
+      <div class="hero__actions fade-up" style="--d:.65s;margin-top:32px">
+        <a class="btn btn--primary btn--lg" href="{{url.contact}}" data-magnetic>{{t.common.bookLong}} <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--glass btn--lg" href="{{url.services}}">{{t.common.services}}</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{> footer}}
+</body>
+</html>

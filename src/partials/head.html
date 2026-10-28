@@ -1,0 +1,39 @@
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{page.title}}</title>
+  <meta name="description" content="{{page.description}}">
+  <link rel="canonical" href="{{page.canonical}}">
+  {{hreflang}}
+  <meta name="theme-color" content="#040d1c">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{site.name}} {{site.brandTagline}}">
+  <meta property="og:title" content="{{page.title}}">
+  <meta property="og:description" content="{{page.description}}">
+  <meta property="og:url" content="{{page.canonical}}">
+  <meta property="og:image" content="{{site.domain}}{{site.ogImage}}">
+  <meta property="og:locale" content="{{locale}}">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@1,500;1,600&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css?v={{v}}">
+
+  <script>
+    // Send returning visitors to the language they picked before.
+    document.documentElement.classList.add('js');
+    (function () {
+      try {
+        var alt = {{altJSON}}, cur = document.documentElement.lang;
+        var want = localStorage.getItem('lang');
+        if (!want) {
+          var nav = (navigator.language || '').toLowerCase();
+          if (cur === 'en' && (nav.indexOf('uk') === 0 || nav.indexOf('ru') === 0)) want = 'uk';
+        }
+        if (want && want !== cur && alt[want]) location.replace(alt[want] + location.hash);
+      } catch (e) {}
+    })();
+  </script>
+  {{jsonld}}

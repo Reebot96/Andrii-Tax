@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  {{> head}}
+</head>
+<body>
+{{> header}}
+
+<main id="main">
+  <section class="page-hero dark">
+    {{> aurora}}
+    <div class="container">
+      <div class="article">
+        <nav class="breadcrumbs fade-up" style="--d:.05s" aria-label="Breadcrumb">
+          <a href="{{url.home}}">{{t.nav.home}}</a><span aria-hidden="true">/</span><a href="{{url.blog}}">{{t.nav.blog}}</a>
+        </nav>
+        <h1 class="page-hero__title" data-split style="font-size:clamp(2.25rem,7vw,3.75rem)">{{article.title}}</h1>
+        <p class="article__meta fade-up" style="--d:.5s">{{article.dateText}} · {{article.minutes}} {{t.blog.minutes}}</p>
+      </div>
+    </div>
+  </section>
+
+  <article class="section">
+    <div class="container">
+      <div class="article prose reveal">
+        {{article.body}}
+        <p class="article-note">{{t.blog.note}}</p>
+        <p><a class="btn btn--line" href="{{url.blog}}"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg> {{t.blog.back}}</a></p>
+      </div>
+    </div>
+  </article>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="panel dark reveal reveal--scale">
+        {{> aurora}}
+        <div>
+          <h2>{{t.blog.ctaTitle}}</h2>
+          <p>{{t.blog.ctaText}}</p>
+        </div>
+        <div class="panel__action">
+          <a class="btn btn--primary btn--lg" href="{{url.contact}}" data-magnetic>{{t.common.bookLong}}</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{> footer}}
+</body>
+</html>

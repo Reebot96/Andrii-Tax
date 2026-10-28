@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  {{> head}}
+</head>
+<body>
+{{> header}}
+
+<main id="main">
+  <section class="page-hero dark">
+    {{> aurora}}
+    <div class="container">
+      <nav class="breadcrumbs fade-up" style="--d:.05s" aria-label="Breadcrumb">
+        <a href="{{url.home}}">{{t.nav.home}}</a><span aria-hidden="true">/</span><span>{{t.nav.services}}</span>
+      </nav>
+      <h1 class="page-hero__title" data-split>{{t.services.title}}</h1>
+      <p class="page-hero__lead fade-up" style="--d:.5s">{{t.services.lead}}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <article class="service-detail" id="personal">
+        <div class="reveal">
+          <span class="service-detail__num">01</span>
+          <h2>{{t.services.personal.title}}</h2>
+          <p class="service-detail__lead">{{t.services.personal.lead}}</p>
+          <a class="btn btn--dark" href="{{url.contact}}">{{t.common.bookLong}} <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="grid">
+          <div class="box reveal">
+            <h3>{{t.services.includes}}</h3>
+            <ul class="checklist">
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.personal.i1}}</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.personal.i2}}</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.personal.i3}}</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.personal.i4}}</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.personal.i5}}</li>
+            </ul>
+          </div>
+          <p class="reveal" style="color:var(--muted)"><strong style="color:var(--ink)">{{t.services.forWhom}}:</strong> {{t.services.personal.w1}} · {{t.services.personal.w2}} · {{t.services.personal.w3}} · {{t.services.personal.w4}}</p>
+        </div>
+      </article>
+
+      <article class="service-detail" id="business">
+        <div class="reveal">
+          <span class="service-detail__num">02</span>
+          <h2>{{t.services.business.title}}</h2>
+          <p class="service-detail__lead">{{t.services.business.lead}}</p>
+          <a class="btn btn--dark" href="{{url.contact}}">{{t.common.bookLong}} <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="grid">
+          <div class="box reveal">
+            <h3>{{t.services.includes}}</h3>
+            <ul class="checklist">
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.business.i1}}</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.business.i2}}</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.business.i3}}</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.business.i4}}</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.business.i5}}</li>
+            </ul>
+          </div>
+          <p class="reveal" style="color:var(--muted)"><strong style="color:var(--ink)">{{t.services.forWhom}}:</strong> {{t.services.business.w1}} · {{t.services.business.w2}} · {{t.services.business.w3}} · {{t.services.business.w4}}</p>
+        </div>
+      </article>
+
+      <article class="service-detail" id="amended">
+        <div class="reveal">
+          <span class="service-detail__num">03</span>
+          <h2>{{t.services.amended.title}}</h2>
+          <p class="service-detail__lead">{{t.services.amended.lead}}</p>
+          <a class="btn btn--dark" href="{{url.contact}}">{{t.common.bookLong}} <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="grid">
+          <div class="box reveal">
+            <h3>{{t.services.includes}}</h3>
+            <ul class="checklist">
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.amended.i1}}</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.amended.i2}}</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.amended.i3}}</li>
+              <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.amended.i4}}</li>
+            </ul>
+          </div>
+          <p class="reveal" style="color:var(--muted)"><strong style="color:var(--ink)">{{t.services.forWhom}}:</strong> {{t.services.amended.w1}} · {{t.services.amended.w2}} · {{t.services.amended.w3}} · {{t.services.amended.w4}}</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- Documents -->
+  <section class="section dark">
+    {{> aurora}}
+    <div class="container">
+      <header class="section__head section__head--split">
+        <div>
+          <p class="kicker reveal">{{t.services.docs.kicker}}</p>
+          <h2 data-split>{{t.services.docs.title}}</h2>
+        </div>
+        <p class="reveal">{{t.services.docs.lead}}</p>
+      </header>
+      <ul class="formats">
+        <li class="format-card reveal">
+          <ul class="checklist" style="margin:0">
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.docs.d1}}</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.docs.d2}}</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.docs.d3}}</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.docs.d4}}</li>
+          </ul>
+        </li>
+        <li class="format-card reveal">
+          <ul class="checklist" style="margin:0">
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.docs.d5}}</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.docs.d6}}</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.docs.d7}}</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.services.docs.d8}}</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--soft">
+    <div class="container">
+      <header class="section__head section__head--center">
+        <p class="kicker reveal">{{t.services.faq.kicker}}</p>
+        <h2 data-split>{{t.services.faq.title}}</h2>
+      </header>
+      <div class="faq">
+        <details class="reveal"><summary>{{t.services.faq.q1}}</summary><div>{{t.services.faq.a1}}</div></details>
+        <details class="reveal"><summary>{{t.services.faq.q2}}</summary><div>{{t.services.faq.a2}}</div></details>
+        <details class="reveal"><summary>{{t.services.faq.q3}}</summary><div>{{t.services.faq.a3}}</div></details>
+        <details class="reveal"><summary>{{t.services.faq.q4}}</summary><div>{{t.services.faq.a4}}</div></details>
+        <details class="reveal"><summary>{{t.services.faq.q5}}</summary><div>{{t.services.faq.a5}}</div></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{> footer}}
+</body>
+</html>

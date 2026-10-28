@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  {{> head}}
+</head>
+<body>
+{{> header}}
+
+<main id="main">
+  <section class="page-hero dark">
+    {{> aurora}}
+    <div class="container">
+      <nav class="breadcrumbs fade-up" style="--d:.05s" aria-label="Breadcrumb">
+        <a href="{{url.home}}">{{t.nav.home}}</a><span aria-hidden="true">/</span><span>{{t.nav.blog}}</span>
+      </nav>
+      <h1 class="page-hero__title" data-split>{{t.blog.title}}</h1>
+      <p class="page-hero__lead fade-up" style="--d:.5s">{{t.blog.lead}}</p>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <ul class="post-grid">
+        {{articleCards}}
+      </ul>
+    </div>
+  </section>
+</main>
+
+{{> footer}}
+</body>
+</html>

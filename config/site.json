@@ -1,0 +1,36 @@
+{
+  "domain": "https://example.com",
+  "name": "Andriy Drebot",
+  "brandTagline": "Tax Services",
+  "city": "Chicago",
+  "region": "IL",
+  "country": "US",
+  "areaServed": "Illinois",
+  "phone": "(404) 940-8508",
+  "phoneHref": "+14049408508",
+  "email": "drebot2525@gmail.com",
+  "formspreeId": "YOUR_FORM_ID",
+  "googleReviewUrl": "https://g.page/r/YOUR_REVIEW_LINK/review",
+  "instagram": "https://instagram.com/",
+  "facebook": "https://facebook.com/",
+  "ogImage": "/assets/img/portrait.jpg",
+  "languages": [
+    { "code": "en", "prefix": "", "locale": "en_US", "label": "EN" },
+    { "code": "uk", "prefix": "/uk", "locale": "uk_UA", "label": "UA" }
+  ],
+  "defaultLang": "en",
+  "pages": [
+    { "id": "home", "slug": "" },
+    { "id": "services", "slug": "services" },
+    { "id": "calculator", "slug": "calculator" },
+    { "id": "about", "slug": "about" },
+    { "id": "reviews", "slug": "reviews" },
+    { "id": "blog", "slug": "blog" },
+    { "id": "contact", "slug": "contact" }
+  ],
+  "articles": [
+    { "id": "tax-documents-checklist", "date": "2026-10-27" },
+    { "id": "amended-return-1040x", "date": "2026-10-27" },
+    { "id": "llc-tax-forms", "date": "2026-10-27" }
+  ]
+}

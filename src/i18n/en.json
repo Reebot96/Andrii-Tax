@@ -1,0 +1,302 @@
+{
+  "meta": {
+    "home": {
+      "title": "Tax Preparation in Chicago & Online Across Illinois | Andriy Drebot",
+      "description": "Personal and business tax returns (1040, LLC, corporations). Meet in Chicago by appointment or work online anywhere in Illinois with e-signatures."
+    },
+    "services": {
+      "title": "Services: Personal, Business & Amended Tax Returns | Andriy Drebot",
+      "description": "Preparation of 1040, LLC, S and C corporation returns, and amended returns for past years (1040-X). Chicago and online across Illinois."
+    },
+    "calculator": {
+      "title": "Tax Refund Calculator | Andriy Drebot",
+      "description": "A rough estimate of your federal refund and Illinois tax. Coming soon."
+    },
+    "about": {
+      "title": "About — Tax Preparer in Chicago | Andriy Drebot",
+      "description": "Tax preparer with an EFIN in Chicago. Meetings by appointment or online anywhere in Illinois with e-signatures."
+    },
+    "reviews": {
+      "title": "Client Reviews | Andriy Drebot",
+      "description": "What clients say about working with me on their tax returns in Chicago and online."
+    },
+    "blog": {
+      "title": "Resources: Tax Articles and Tips | Andriy Drebot",
+      "description": "Plain-language explanations of tax returns, documents, LLCs and fixing past years."
+    },
+    "contact": {
+      "title": "Contact & Book a Consultation | Andriy Drebot",
+      "description": "Book a tax consultation in Chicago or online across Illinois. Phone, email and booking form."
+    },
+    "notFound": {
+      "title": "Page not found | Andriy Drebot",
+      "description": "This page does not exist."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "calculator": "Calculator",
+    "about": "About",
+    "reviews": "Reviews",
+    "blog": "Resources",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close menu",
+    "langLabel": "Site language"
+  },
+  "common": {
+    "book": "Book now",
+    "bookLong": "Book a consultation",
+    "call": "Call",
+    "learnMore": "Learn more",
+    "skip": "Skip to content",
+    "services": "View services",
+    "allPosts": "All articles"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Tax preparer · Chicago, IL",
+      "title": "Taxes, done <em class=\"gradient-text\">calmly</em> and correctly",
+      "lead": "I prepare personal and business tax returns. Meet in Chicago by appointment or work online from anywhere in Illinois — with e-signatures.",
+      "point1": "IRS Authorized e-file Provider",
+      "point2": "Clients come by referral",
+      "point3": "In person or online",
+      "photoAlt": "Andriy Drebot, tax preparer in Chicago",
+      "cardATitle": "IRS e-file",
+      "cardAText": "Official electronic filing",
+      "cardBTitle": "Online",
+      "cardBText": "E-signature",
+      "seal": "Chicago · Illinois · Online · "
+    },
+    "marquee": ["Form 1040", "LLC", "S-Corp", "C-Corp", "Amended 1040-X", "Self-employed 1099", "Illinois IL-1040", "E-file"],
+    "why": {
+      "kicker": "Why me",
+      "title": "Trust is the <em>foundation</em> of tax work",
+      "lead": "Taxes are about your money and personal data. So everything is transparent, personal and unhurried.",
+      "big": "I prepare every return personally — from the first conversation to the IRS confirmation.",
+      "c1Title": "Confidential",
+      "c1Text": "Only I see your documents. Your data is never shared with third parties.",
+      "c2Title": "Plain language",
+      "c2Text": "I explain what and why, without jargon. Ask me anything."
+    },
+    "services": {
+      "kicker": "Services",
+      "title": "How I can <em>help</em>",
+      "lead": "From a simple return to a business with several owners.",
+      "s1Title": "Personal tax returns",
+      "s1Text": "Form 1040 for employees, the self-employed and families with kids.",
+      "s1Tags": "W-2 · 1099 · Kids · Education",
+      "s2Title": "Business & LLC",
+      "s2Text": "Returns for LLCs, S and C corporations, plus tax payments during the year.",
+      "s2Tags": "LLC · S-Corp · C-Corp · Estimated tax",
+      "s3Title": "Fixing past years",
+      "s3Text": "Correcting mistakes with Form 1040-X and filing missed returns.",
+      "s3Tags": "1040-X · Missed years"
+    },
+    "process": {
+      "kicker": "Process",
+      "title": "How we <em>work</em>",
+      "lead": "Clear steps — you always know where your return stands.",
+      "s1Title": "Consultation",
+      "s1Text": "We discuss your situation and identify the forms you need and the next steps.",
+      "s2Title": "Preparation",
+      "s2Text": "We gather the information needed. I prepare your return, applying every deduction and credit available to you.",
+      "s3Title": "Review & sign",
+      "s3Text": "We review the result together, then you sign the return.",
+      "s4Title": "Filing",
+      "s4Text": "I file with the IRS and the Illinois Department of Revenue and let you know once it's accepted."
+    },
+    "calc": {
+      "kicker": "Calculator",
+      "title": "How much could you <em>get back</em>?",
+      "text": "A rough estimate based on your income, filing status and number of children.",
+      "cta": "Open the calculator",
+      "note": "A rough estimate, not tax advice."
+    },
+    "posts": {
+      "kicker": "Resources",
+      "title": "Tips and <em>explanations</em>"
+    }
+  },
+  "services": {
+    "kicker": "Services",
+    "title": "Tax services for <em>people and businesses</em>",
+    "lead": "Returns prepared for your situation: from a W-2 job to a company with several owners. I quote the price after the consultation — before any work begins.",
+    "includes": "What's included",
+    "forWhom": "Who it's for",
+    "personal": {
+      "title": "Personal tax returns",
+      "lead": "Your federal Form 1040 and Illinois IL-1040 — done right, with every benefit you qualify for.",
+      "i1": "W-2 income from your employer",
+      "i2": "Self-employment and 1099 (Schedule C)",
+      "i3": "Credits for children, education and dependent care",
+      "i4": "Deductions: mortgage, donations, medical expenses",
+      "i5": "E-filing and refund tracking",
+      "w1": "Employees",
+      "w2": "Self-employed and contractors",
+      "w3": "Families with children",
+      "w4": "First-time filers in the US"
+    },
+    "business": {
+      "title": "Business & LLC",
+      "lead": "Returns for companies of any type, plus help with taxes during the year — so April brings no surprises.",
+      "i1": "Single-member LLC (Schedule C)",
+      "i2": "Multi-member LLC (Form 1065, K-1)",
+      "i3": "S corporations (Form 1120-S)",
+      "i4": "C corporations (Form 1120)",
+      "i5": "Illinois business returns and quarterly payments",
+      "w1": "LLC owners",
+      "w2": "Small businesses and startups",
+      "w3": "Owners considering an S-Corp",
+      "w4": "Contractors with their own company"
+    },
+    "amended": {
+      "title": "Fixing past years",
+      "lead": "A mistake on a filed return or a missed year can be fixed. The sooner, the better.",
+      "i1": "Amended return, Form 1040-X",
+      "i2": "Filing missed returns for past years",
+      "i3": "Finding missed deductions and credits",
+      "i4": "Explaining IRS letters in plain language",
+      "w1": "Anyone who made a mistake on a return",
+      "w2": "Anyone who didn't file in past years",
+      "w3": "Anyone who received an IRS letter",
+      "w4": "Anyone who wants past years reviewed"
+    },
+    "docs": {
+      "kicker": "Preparation",
+      "title": "What to bring to the <em>consultation</em>",
+      "lead": "The exact list depends on your situation — I'll tell you after our first conversation. Usually you'll need:",
+      "d1": "Photo ID and SSN or ITIN",
+      "d2": "Income forms: W-2, 1099",
+      "d3": "Last year's return (if you have it)",
+      "d4": "Forms 1098: mortgage, tuition (1098-T)",
+      "d5": "Childcare expenses",
+      "d6": "Bank details for your refund",
+      "d7": "For a business: income and expenses for the year",
+      "d8": "Letters from the IRS or the state (if any)"
+    },
+    "faq": {
+      "kicker": "Questions",
+      "title": "Frequently asked <em>questions</em>",
+      "q1": "How much do your services cost?",
+      "a1": "It depends on how complex your return is. I quote the price after a short consultation — before any work begins, with no hidden fees.",
+      "q2": "Can everything be done online?",
+      "a2": "Yes. A video consultation, online document exchange and an e-signature — no visit needed.",
+      "q3": "When is the filing deadline?",
+      "a3": "Usually April 15. You can file an extension until October 15, but any tax owed is still due by the April deadline.",
+      "q4": "How fast will I get my refund?",
+      "a4": "After e-filing, the IRS usually issues refunds within 21 days, unless the return needs extra review.",
+      "q5": "Do you work with clients outside Chicago?",
+      "a5": "Yes, online across all of Illinois. In-person meetings are in Chicago by appointment."
+    }
+  },
+  "calculator": {
+    "kicker": "Calculator",
+    "title": "Refund <em>calculator</em> — coming soon",
+    "lead": "This page will soon give you a rough estimate of your federal refund and Illinois tax. Until then, book a consultation and I'll calculate it precisely for your situation."
+  },
+  "about": {
+    "kicker": "About",
+    "title": "Hi, I'm <em>Andriy</em>",
+    "lead": "A tax preparer with an EFIN in Chicago. I help people and businesses file their returns correctly and without stress.",
+    "photoAlt": "Andriy Drebot",
+    "storyTitle": "Taxes can make sense",
+    "p1": "I prepare personal and business tax returns — from Form 1040 to LLCs and corporations.",
+    "p2": "Most of my clients came through recommendations from friends and family. To me, that's the best measure of my work — and the reason I treat every return personally.",
+    "p3": "My goal is for you not just to sign your return, but to understand it: where the numbers come from, which benefits were applied and what to do differently next year.",
+    "p4": "Outside of taxes, I'm a photographer and videographer. That's where my love of detail, precision and clean results comes from.",
+    "formatsKicker": "How we meet",
+    "formatsTitle": "Whatever <em>suits you</em>",
+    "f1Title": "In person in Chicago",
+    "f1Text": "Meetings by appointment. I send the address once your booking is confirmed.",
+    "f1i1": "A calm, unhurried conversation",
+    "f1i2": "We go through documents together",
+    "f1i3": "Convenient times, including evenings",
+    "f2Title": "Online across Illinois",
+    "f2Text": "The whole process without any travel, from anywhere in the state.",
+    "f2i1": "Consultation by video call",
+    "f2i2": "Online document exchange",
+    "f2i3": "E-signature for your return",
+    "valuesKicker": "Principles",
+    "valuesTitle": "What the work <em>stands on</em>",
+    "v1Title": "Personal",
+    "v1Text": "I handle your return myself, start to finish.",
+    "v2Title": "Transparent",
+    "v2Text": "You get the price before work begins. I explain every step.",
+    "v3Title": "Confidential",
+    "v3Text": "Your data is used only for your return.",
+    "v4Title": "On time",
+    "v4Text": "I remind you of deadlines and file without delay."
+  },
+  "reviews": {
+    "kicker": "Reviews",
+    "title": "What <em>clients</em> say",
+    "lead": "Most clients come by referral. Here's what they say about working with me.",
+    "placeholderText": "A real client review will go here. Replace this text in the translation file.",
+    "placeholderName": "Client name",
+    "r1Role": "Personal return",
+    "r2Role": "LLC",
+    "r3Role": "Amended return",
+    "ctaTitle": "Have you <em>worked with me</em>?",
+    "ctaText": "I'd be grateful for a Google review — it helps others find a tax preparer they can trust.",
+    "ctaButton": "Leave a Google review"
+  },
+  "blog": {
+    "kicker": "Resources",
+    "title": "Helpful reading on <em>taxes</em>",
+    "lead": "Plain-language explanations: documents, deadlines, business and fixing mistakes.",
+    "readMore": "Read",
+    "minutes": "min read",
+    "back": "All articles",
+    "note": "This article is general information, not tax advice. Your situation may differ — book a consultation for an answer specific to you.",
+    "ctaTitle": "Still have <em>questions</em>?",
+    "ctaText": "Let's go through your situation in a consultation."
+  },
+  "contact": {
+    "kicker": "Contact",
+    "title": "Book a <em>consultation</em>",
+    "lead": "Send a request or call — I'll get back to you to find a time that works.",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "locationValue": "Chicago, IL · online across Illinois",
+    "addressNote": "I send the address for in-person meetings once your booking is confirmed.",
+    "formTitle": "Booking request",
+    "formLead": "Takes less than a minute.",
+    "name": "Name",
+    "namePh": "Your name",
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "service": "Service",
+    "serviceOpt1": "Personal tax return",
+    "serviceOpt2": "Business or LLC",
+    "serviceOpt3": "Fixing past years",
+    "serviceOpt4": "Other / not sure",
+    "format": "Format",
+    "formatInPerson": "In person in Chicago",
+    "formatOnline": "Online",
+    "message": "Message",
+    "messagePh": "Briefly describe your situation (optional)",
+    "submit": "Send request",
+    "sending": "Sending…",
+    "note": "Please don't send your SSN, account numbers or other sensitive data through this form — we'll exchange them securely after booking.",
+    "success": "Thank you! Your request has been received — I'll be in touch shortly.",
+    "error": "Couldn't send your request. Please try again or email me.",
+    "subject": "New booking request from the website"
+  },
+  "notFound": {
+    "title": "This page doesn't exist",
+    "text": "The link may be out of date. Head back home or book a consultation.",
+    "home": "Back to home"
+  },
+  "footer": {
+    "big": "Ready to sort out your taxes?",
+    "about": "Personal and business tax returns. Chicago and online across Illinois.",
+    "pagesTitle": "Pages",
+    "contactTitle": "Contact",
+    "location": "Chicago, IL · by appointment",
+    "disclaimer": "Information on this site is general and is not tax or legal advice.",
+    "rights": "All rights reserved."
+  }
+}

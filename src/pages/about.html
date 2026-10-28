@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  {{> head}}
+</head>
+<body>
+{{> header}}
+
+<main id="main">
+  <section class="page-hero dark">
+    {{> aurora}}
+    <div class="container">
+      <nav class="breadcrumbs fade-up" style="--d:.05s" aria-label="Breadcrumb">
+        <a href="{{url.home}}">{{t.nav.home}}</a><span aria-hidden="true">/</span><span>{{t.nav.about}}</span>
+      </nav>
+      <h1 class="page-hero__title" data-split>{{t.about.title}}</h1>
+      <p class="page-hero__lead fade-up" style="--d:.5s">{{t.about.lead}}</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container about-grid">
+      <figure class="about-photo reveal reveal--scale" style="margin:0">
+        <img src="/assets/img/portrait.jpg" alt="{{t.about.photoAlt}}" width="720" height="1280" loading="lazy">
+      </figure>
+      <div class="prose">
+        <p class="kicker reveal">{{t.about.kicker}}</p>
+        <h2 data-split style="margin-top:0">{{t.about.storyTitle}}</h2>
+        <p class="reveal">{{t.about.p1}}</p>
+        <p class="reveal">{{t.about.p2}}</p>
+        <p class="reveal">{{t.about.p3}}</p>
+        <p class="reveal">{{t.about.p4}}</p>
+        <p class="reveal" style="margin-top:32px">
+          <a class="btn btn--primary btn--lg" href="{{url.contact}}" data-magnetic style="color:var(--navy-950)">{{t.common.bookLong}} <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    {{> aurora}}
+    <div class="container">
+      <header class="section__head">
+        <p class="kicker reveal">{{t.about.formatsKicker}}</p>
+        <h2 data-split>{{t.about.formatsTitle}}</h2>
+      </header>
+      <div class="formats">
+        <article class="format-card spotlight reveal">
+          <span class="format-card__icon" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24"><path d="M4 11.5 12 5l8 6.5V20H4z"/><path d="M10 20v-5h4v5"/></svg>
+          </span>
+          <h3>{{t.about.f1Title}}</h3>
+          <p>{{t.about.f1Text}}</p>
+          <ul class="checklist">
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.about.f1i1}}</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.about.f1i2}}</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.about.f1i3}}</li>
+          </ul>
+        </article>
+        <article class="format-card spotlight reveal">
+          <span class="format-card__icon" aria-hidden="true">
+            <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8 20h8M12 16.5V20"/></svg>
+          </span>
+          <h3>{{t.about.f2Title}}</h3>
+          <p>{{t.about.f2Text}}</p>
+          <ul class="checklist">
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.about.f2i1}}</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.about.f2i2}}</li>
+            <li><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg>{{t.about.f2i3}}</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <header class="section__head">
+        <p class="kicker reveal">{{t.about.valuesKicker}}</p>
+        <h2 data-split>{{t.about.valuesTitle}}</h2>
+      </header>
+      <ul class="values">
+        <li class="spotlight reveal"><h3>{{t.about.v1Title}}</h3><p>{{t.about.v1Text}}</p></li>
+        <li class="spotlight reveal"><h3>{{t.about.v2Title}}</h3><p>{{t.about.v2Text}}</p></li>
+        <li class="spotlight reveal"><h3>{{t.about.v3Title}}</h3><p>{{t.about.v3Text}}</p></li>
+        <li class="spotlight reveal"><h3>{{t.about.v4Title}}</h3><p>{{t.about.v4Text}}</p></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+{{> footer}}
+</body>
+</html>

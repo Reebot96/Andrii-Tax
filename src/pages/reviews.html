@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+  {{> head}}
+</head>
+<body>
+{{> header}}
+
+<main id="main">
+  <section class="page-hero dark">
+    {{> aurora}}
+    <div class="container">
+      <nav class="breadcrumbs fade-up" style="--d:.05s" aria-label="Breadcrumb">
+        <a href="{{url.home}}">{{t.nav.home}}</a><span aria-hidden="true">/</span><span>{{t.nav.reviews}}</span>
+      </nav>
+      <h1 class="page-hero__title" data-split>{{t.reviews.title}}</h1>
+      <p class="page-hero__lead fade-up" style="--d:.5s">{{t.reviews.lead}}</p>
+    </div>
+  </section>
+
+  <section class="section section--soft">
+    <div class="container">
+      <!-- Placeholder cards: replace with real client reviews (with their permission). -->
+      <div class="reviews">
+        <figure class="review review--placeholder reveal" style="margin:0 0 16px">
+          <div class="review__stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></div>
+          <blockquote>{{t.reviews.placeholderText}}</blockquote>
+          <figcaption><footer><span class="review__avatar" aria-hidden="true">A</span><span>{{t.reviews.placeholderName}}<small>{{t.reviews.r1Role}}</small></span></footer></figcaption>
+        </figure>
+        <figure class="review review--placeholder reveal" style="margin:0 0 16px">
+          <div class="review__stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></div>
+          <blockquote>{{t.reviews.placeholderText}}</blockquote>
+          <figcaption><footer><span class="review__avatar" aria-hidden="true">B</span><span>{{t.reviews.placeholderName}}<small>{{t.reviews.r2Role}}</small></span></footer></figcaption>
+        </figure>
+        <figure class="review review--placeholder reveal" style="margin:0 0 16px">
+          <div class="review__stars" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/></svg></div>
+          <blockquote>{{t.reviews.placeholderText}}</blockquote>
+          <figcaption><footer><span class="review__avatar" aria-hidden="true">C</span><span>{{t.reviews.placeholderName}}<small>{{t.reviews.r3Role}}</small></span></footer></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="panel dark reveal reveal--scale">
+        {{> aurora}}
+        <div>
+          <h2>{{t.reviews.ctaTitle}}</h2>
+          <p>{{t.reviews.ctaText}}</p>
+        </div>
+        <div class="panel__action">
+          <a class="btn btn--primary btn--lg" href="{{site.googleReviewUrl}}" target="_blank" rel="noopener" data-magnetic>{{t.reviews.ctaButton}} <svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{> footer}}
+</body>
+</html>

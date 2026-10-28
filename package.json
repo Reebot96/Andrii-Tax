@@ -1,0 +1,12 @@
+{
+  "name": "tax-site",
+  "private": true,
+  "description": "Bilingual static website for a Chicago tax preparer",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node dev.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
